@@ -86,8 +86,7 @@ while True:
 ```
 ### Wiring
 
-![WiringSolution](images/I2C_M4_Solution.png)
-
+<img src="https://github.com/Helmstk1/CircuitPython/blob/master/images/I2C_M4_Solution.png?raw=true" alt="Italian Trulli">
 
 
 
