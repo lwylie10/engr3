@@ -92,7 +92,7 @@ while True:
 
 
 
-## CircuitPython_LCD
+## CircuitPython_servo
 
 ### Description & Code
 
