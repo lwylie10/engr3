@@ -8,14 +8,18 @@ from rainbowio import colorwheel
 NUMPIXELS = 1
 SPEED = 0.05
 BRIGHTNESS = 0.1
-PIN = board.NEOPIXEL(PIN, NUMPIXELS, brightness=BRIGHTNESS, auto_write=False)
+PIN = board.NEOPIXEL
 RED = (255, 0, 0)
 GREEN = (0, 255, 0)
 
 while True:
-    print(sonar.distance)
+    try:
+        print(sonar.distance)
+        if sonar.distance <= 5:
+            neopixel.fill(255, 0 ,0)       
+            print("something happy")
 
-    time.sleep(0.1)
-    if sonar.distance <= 5:
-        
-        
+    except:
+        print("gfdsijojoidsgjoisdgroij")
+        time.sleep(0.1)
+    
