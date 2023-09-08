@@ -10,16 +10,29 @@ SPEED = 0.05
 BRIGHTNESS = 0.1
 PIN = board.NEOPIXEL
 RED = (255, 0, 0)
+YELLOW = (255, 150, 0)
 GREEN = (0, 255, 0)
-
+CYAN = (0, 255, 255)
+BLUE = (0, 0, 255)
+PURPLE = (180, 0, 255)
+cm = 0
+pixel = neopixel.NeoPixel(PIN, NUMPIXELS, brightness=0.3, auto_write=False)
 while True:
     try:
-        print(sonar.distance)
-        if sonar.distance <= 5:
-            neopixel.fill(255, 0 ,0)       
-            print("something happy")
-
+        cm = sonar.distance  
+        print(cm)
+        if cm <= 5:
+            pixel.fill(RED) 
+            pixel.show()      
+            time.sleep(0.1)
+        elif cm <= 20: 
+            pixel.fill(GREEN)
+            pixel.show()
+            time.sleep(0.1)
+        else:
+            pixel.fill(BLUE)
+            pixel.show
+            time.sleep(0.1)
     except:
         print("gfdsijojoidsgjoisdgroij")
         time.sleep(0.1)
-    
