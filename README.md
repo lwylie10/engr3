@@ -68,7 +68,7 @@ Code goes here
 
 ![ezgif com-optimize](https://github.com/addddddy/engr3/assets/143544940/561c9908-fda6-4a8d-a112-b2ad3f70374c)
 
-This beautiful GIF was finely produced by Addy Buckner (like how is she so awesome?!!?!?)
+This beautiful GIF was finely produced by Addy Buckner
 [Addy's Github](https://github.com/addddddy)
 
 ### Wiring
