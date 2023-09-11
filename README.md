@@ -34,7 +34,7 @@ while True:
 
 ![ezgif com-video-to-gif](https://github.com/addddddy/engr3/assets/143544940/8e3104e2-fc72-45ad-a922-281586c123d8)
 
-Photo creds to Addy Buckner (Literally my fave person ever) 
+Photo creds to Addy Buckner
 [Addy Buckner's Github](https://github.com/addddddy)
 
 ### Wiring
