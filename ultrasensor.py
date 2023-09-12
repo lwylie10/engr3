@@ -16,7 +16,7 @@ CYAN = (0, 255, 255)
 BLUE = (0, 0, 255)
 PURPLE = (180, 0, 255)
 cm = 0
-pixel = neopixel.NeoPixel(PIN, NUMPIXELS, brightness=0.3, auto_write=False)
+pixel = neopixel.NeoPixel(PIN, NUMPIXELS, brightness=0.2, auto_write=False)
 while True:
     try:
         cm = sonar.distance  
@@ -34,5 +34,5 @@ while True:
             pixel.show
             time.sleep(0.1)
     except:
-        print("gfdsijojoidsgjoisdgroij")
+        print("defgh")
         time.sleep(0.1)
