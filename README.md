@@ -75,7 +75,7 @@ This beautiful GIF was finely produced by Addy Buckner
 
 
 ### Reflection
-
+This assignment was definitly harder then the last one because I had to spend a long time on tweaking the servo values and the different commands to make it less buggy. I had the most trouble with making sure that wherever the servo arm was, when i clicked the button it would move 90 degrees in the direction i wanted it to. it challenged me to think about the way i was coding and what values i had to use to make it less buggy.
 
 
 ## CircuitPython_LCD
