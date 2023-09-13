@@ -4,25 +4,28 @@ import adafruit_hcsr04
 sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.D8, echo_pin=board.D7)
 import neopixel
 from rainbowio import colorwheel
+import simpleio
 
 NUMPIXELS = 1
 SPEED = 0.05
 BRIGHTNESS = 0.1
 PIN = board.NEOPIXEL
-RED = (255, 0, 0)
-YELLOW = (255, 150, 0)
-GREEN = (0, 255, 0)
-CYAN = (0, 255, 255)
-BLUE = (0, 0, 255)
-PURPLE = (180, 0, 255)
+red=0
+blue=0
+green=0
+
 cm = 0
 pixel = neopixel.NeoPixel(PIN, NUMPIXELS, brightness=0.2, auto_write=False)
 while True:
     try:
         cm = sonar.distance  
         print(cm)
-        if cm <= 5:
-            pixel.fill(RED) 
+        if cm >= 5 and cm <=20:
+            red = simpleio.map_range(cm, 5, 20, 255, 0)
+            blue = simpleio.map_range(cm, 5, 20, 0, 255)
+            green = 0
+            print(red, blue)
+            pixel.fill((red, blue, green)) 
             pixel.show()      
             time.sleep(0.1)
         elif cm <= 20: 
