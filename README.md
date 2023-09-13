@@ -72,6 +72,7 @@ This beautiful GIF was finely produced by Addy Buckner
 [Addy's Github](https://github.com/addddddy)
 
 ### Wiring
+![image](https://github.com/lwylie10/engr3/assets/143544940/8cbd44c2-ff50-4534-8e8f-f62179d86f09)
 
 
 ### Reflection
