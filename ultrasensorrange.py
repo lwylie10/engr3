@@ -28,13 +28,13 @@ while True:
             pixel.fill((red, blue, green)) 
             pixel.show()      
             time.sleep(0.1)
-        elif cm <= 20: 
-            pixel.fill(BLUE)
+        elif cm >= 20 and cm <=35: 
+            red = 0
+            blue = simpleio.map_range(cm, 20, 35, 255, 0)
+            green = simpleio.map_range(cm, 20, 35, 0, 255)
+            print(blue, green)
+            pixel.fill((red, blue, green))
             pixel.show()
-            time.sleep(0.1)
-        else:
-            pixel.fill(GREEN)
-            pixel.show
             time.sleep(0.1)
     except:
         print("i crashed")
