@@ -19,22 +19,29 @@ pixel = neopixel.NeoPixel(PIN, NUMPIXELS, brightness=0.2, auto_write=False)
 while True:
     try:
         cm = sonar.distance  
-        print(cm)
-        if cm >= 5 and cm <=20:
+        if cm >= 0 and cm <=20:
             red = simpleio.map_range(cm, 5, 20, 255, 0)
             blue = simpleio.map_range(cm, 5, 20, 0, 255)
             green = 0
-            print(red, blue)
-            pixel.fill((red, blue, green)) 
+            print(cm)
+            pixel.fill((red, green, blue)) 
             pixel.show()      
             time.sleep(0.1)
         elif cm >= 20 and cm <=35: 
             red = 0
             blue = simpleio.map_range(cm, 20, 35, 255, 0)
             green = simpleio.map_range(cm, 20, 35, 0, 255)
-            print(blue, green)
-            pixel.fill((red, blue, green))
+            print(cm)
+            pixel.fill((red, green, blue))
             pixel.show()
+            time.sleep(0.1)
+        elif cm > 35 and cm < 120:
+            green = 255
+            pixel.fill(green)
+            red = 0
+            blue = 0
+            pixel.show
+            print (cm)
             time.sleep(0.1)
     except:
         print("i crashed")
