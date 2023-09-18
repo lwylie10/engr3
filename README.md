@@ -95,7 +95,7 @@ while True:
 
 ```
 
-**Lastly, please end this section with a link to your code or file.**  
+(https://github.com/lwylie10/engr3/blob/main/servo.py)
 
 
 ### Evidence
