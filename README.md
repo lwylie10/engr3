@@ -57,11 +57,45 @@ Write a couple sentences here, describing this assignment, and make sure that yo
   Your description is the right place to draw the reader's attention to any important chunks of code. Here's how you make code look like code:
 
 ```python
-Code goes here
+import time
+import board
+import pwmio
+from digitalio import DigitalInOut, Direction, Pull
+from adafruit_motor import servo
+
+angle=90 #assigning a starting value to my angle variable 
+
+pwm = pwmio.PWMOut(board.D6, duty_cycle=2 ** 15, frequency=50)
+my_servo = servo.Servo(pwm)
+
+btn = DigitalInOut(board.D5)#wire in pin D5
+btn.direction = Direction.INPUT
+btn.pull = Pull.DOWN
+
+btn2 = DigitalInOut(board.D4)#wire in pin D4
+btn2.direction = Direction.INPUT#button is input
+btn2.pull = Pull.DOWN#if nothings pressing it it = 0(thats why i dont need a resistor)
+
+while True:
+    if  angle<180:
+        if btn.value:   #if button 1 is pressed
+            print(angle)    #print the angle
+            angle = angle+90 #add 90 degrees to the code
+            my_servo.angle = angle
+            time.sleep(0.02)
+    if angle>0:    
+            if btn2.value: #same thing as above
+               print(angle)
+               angle = angle-90
+               my_servo.angle = angle
+               time.sleep(0.02)
+
+
+            time.sleep(0.1) # sleep for debounce
 
 ```
 
-**Lastly, please end this section with a link to your code or file.**  
+(https://github.com/lwylie10/engr3/blob/main/servo.py)
 
 
 ### Evidence
@@ -79,7 +113,80 @@ This beautiful GIF was finely produced by Addy Buckner
 This assignment was definitly harder then the last one because I had to spend a long time on tweaking the servo values and the different commands to make it less buggy. I had the most trouble with making sure that wherever the servo arm was, when i clicked the button it would move 90 degrees in the direction i wanted it to. it challenged me to think about the way i was coding and what values i had to use to make it less buggy.
 
 
-## CircuitPython_LCD
+## Circuit Python Distance Sensor
+
+### Description & Code Snippets
+Use the HC-SR04 to measure the distance to an object and print that out to your serial monitor or LCD in cm.
+Next, you will get the neopixel to turn red when your object is less than 5cm, and green when its 35cm. For the final version of this code, you'll smoothly shift the color of the onboard neopixel, corresponding to the distance, according to the graphic below.
+(Neopixel should stay red when below 5cm and green when above 35cm)
+  Your description is the right place to draw the reader's attention to any important chunks of code. Here's how you make code look like code:
+
+```python
+import time
+import board
+import adafruit_hcsr04
+sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.D8, echo_pin=board.D7)
+import neopixel
+from rainbowio import colorwheel
+import simpleio
+
+NUMPIXELS = 1
+SPEED = 0.05
+BRIGHTNESS = 0.1
+PIN = board.NEOPIXEL
+red=0
+blue=0
+green=0
+
+cm = 0
+pixel = neopixel.NeoPixel(PIN, NUMPIXELS, brightness=0.2, auto_write=False)
+while True:
+    try:
+        cm = sonar.distance  
+        if cm >= 0 and cm <=20:
+            red = simpleio.map_range(cm, 5, 20, 255, 0)
+            blue = simpleio.map_range(cm, 5, 20, 0, 255)
+            green = 0
+            print(cm)
+            pixel.fill((red, green, blue)) 
+            pixel.show()      
+            time.sleep(0.1)
+        elif cm >= 20 and cm <=35: 
+            red = 0
+            blue = simpleio.map_range(cm, 20, 35, 255, 0)
+            green = simpleio.map_range(cm, 20, 35, 0, 255)
+            print(cm)
+            pixel.fill((red, green, blue))
+            pixel.show()
+            time.sleep(0.1)
+        elif cm > 35 and cm < 120:
+            green = 255
+            pixel.fill(green)
+            red = 0
+            blue = 0
+            pixel.show
+            print (cm)
+            time.sleep(0.1)
+    except:
+        print("i crashed")
+        time.sleep(0.1)
+```
+
+**(https://github.com/lwylie10/engr3/blob/main/ultrasensorrange.py)**  
+
+### Evidence
+
+
+https://github.com/addddddy/engr3/assets/143544940/452524df-8441-4da1-8679-6953b6bb34ee
+
+
+### Wiring
+![image](https://github.com/lwylie10/engr3/assets/143749987/1cccb58a-4a70-44e3-95d9-08bcda33996e)
+
+### Reflection
+The assignment took me a week because at first i spent a really long time trying to figure out my buggy board issues but once i figured out what the problem was, i could work on my code. i first did the simple part which was making an if statement to change the color of the neopixel based on the values that the distance sensor was printing out. then i had to add the library. once i looked up the commands and all of the code it was easy to paste in the rest of the code to make it work. it was fun to watch the colors change.
+
+## Motor Control
 
 ### Description & Code Snippets
 Write a couple sentences here, describing this assignment, and make sure that you hit these two points:
@@ -96,29 +203,14 @@ Code goes here
 
 **Lastly, please end this section with a link to your code or file.**  
 
-
 ### Evidence
-Pictures / Gifs of your finished work should go here.  You need to communicate what your thing does.
-For making a GIF, I recommend [ezgif.com](https://www.ezgif.com) Remember you can insert pictures using Markdown or HTML to insert an image.
-
-
-And here is how you should give image credit to someone if you use their work:
-
-Image credit goes to [Rick A](https://www.youtube.com/watch?v=dQw4w9WgXcQ&scrlybrkr=8931d0bc)
-
-
 
 ### Wiring
 [tinkercad.com](https://www.tinkercad.com/learn/circuits).  If you can't find the particular part you need, get creative, and just drop a note into the circuit diagram, explaining.
 For example, I use an Arduino Uno to represent my Circuitpython device but write a note saying which board I'm actually using.
 Then post an image here.   [Here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
-
-
 ### Reflection
 Don't just tell the reader what went wrong or was challenging!  Describe how you figured it out, share the things that helped you succeed (tutorials, other people's repos, etc.), and then share what you learned from that experience.  **Your underlying goal for the reflection, is to concisely pass on the RIGHT knowledge that will help the reader recreate this assignment better or more easily.  Pass on your wisdom!**
-
-
-
 
 
 ## NextAssignment
