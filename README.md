@@ -186,6 +186,33 @@ https://github.com/addddddy/engr3/assets/143544940/452524df-8441-4da1-8679-6953b
 ### Reflection
 The assignment took me a week because at first i spent a really long time trying to figure out my buggy board issues but once i figured out what the problem was, i could work on my code. i first did the simple part which was making an if statement to change the color of the neopixel based on the values that the distance sensor was printing out. then i had to add the library. once i looked up the commands and all of the code it was easy to paste in the rest of the code to make it work. it was fun to watch the colors change.
 
+## Motor Control
+
+### Description & Code Snippets
+Write a couple sentences here, describing this assignment, and make sure that you hit these two points:
+* What was the goal of the assignment?
+* How did you accomplish that goal?
+  How you accomplished the goal is NOT a reflection, it is you telling the reader how to do this assignment, in broad strokes.
+
+  Your description is the right place to draw the reader's attention to any important chunks of code. Here's how you make code look like code:
+
+```python
+Code goes here
+
+```
+
+**Lastly, please end this section with a link to your code or file.**  
+
+### Evidence
+
+### Wiring
+[tinkercad.com](https://www.tinkercad.com/learn/circuits).  If you can't find the particular part you need, get creative, and just drop a note into the circuit diagram, explaining.
+For example, I use an Arduino Uno to represent my Circuitpython device but write a note saying which board I'm actually using.
+Then post an image here.   [Here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
+### Reflection
+Don't just tell the reader what went wrong or was challenging!  Describe how you figured it out, share the things that helped you succeed (tutorials, other people's repos, etc.), and then share what you learned from that experience.  **Your underlying goal for the reflection, is to concisely pass on the RIGHT knowledge that will help the reader recreate this assignment better or more easily.  Pass on your wisdom!**
+
+
 ## NextAssignment
 
 ### Description & Code Snippets
