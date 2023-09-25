@@ -189,15 +189,20 @@ The assignment took me a week because at first i spent a really long time trying
 ## Motor Control
 
 ### Description & Code Snippets
-Write a couple sentences here, describing this assignment, and make sure that you hit these two points:
-* What was the goal of the assignment?
-* How did you accomplish that goal?
-  How you accomplished the goal is NOT a reflection, it is you telling the reader how to do this assignment, in broad strokes.
-
-  Your description is the right place to draw the reader's attention to any important chunks of code. Here's how you make code look like code:
-
+ 
+I have to wire up a 6v battery pack to a circuit with a motor and then write the code to make the motor speed up and slow down, based on input from a potentiometer.
 ```python
-Code goes here
+import time 
+import board
+import pwmio
+from digitalio import DigitalInOut, Direction, Pull
+from adafruit_motor import motor
+import analogio
+spinny = pwmio.PWMOut(board.D6, duty_cycle=65535,frequency = 5000 )# wire in pin 5
+speed = analogio.AnalogIn(board.A1)
+while True:
+    sdfg = speed.value
+    spinny.duty_cycle = sdfg
 
 ```
 
