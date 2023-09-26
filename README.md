@@ -218,12 +218,10 @@ This assignment had much fewer lines of code then I first thought. I spend a whi
 ## Photointeruppter
 
 ### Description & Code Snippets
-Write a couple sentences here, describing this assignment, and make sure that you hit these two points:
-* What was the goal of the assignment?
-* How did you accomplish that goal?
-  How you accomplished the goal is NOT a reflection, it is you telling the reader how to do this assignment, in broad strokes.
-
-  Your description is the right place to draw the reader's attention to any important chunks of code. Here's how you make code look like code:
+Wire up your photointerrupter and have it keep track of how many times it has been interrupted.
+Your program outputs the count using a full sentence like "The number of interrupts is: ___" or "I have been interrupted ___ times."
+The program outputs the sentence every 4 seconds.
+Don't use sleep(), use time.monotonic().
 
 ```python
 import time
