@@ -1,11 +1,16 @@
-import board
 import time
-import busio
-import adafruit_character_lcd.character_lcd_i2c as character_lcd
-i2c = busio.I2C(board.SCL, board.SDA)
-cols = 16
-rows = 2
-lcd = character_lcd.Character_LCD_I2C(i2c, cols, rows)
+import board, digitalio
+newt = 0
+interrupter = digitalio.DigitalInOut(board.D7)
+interrupter.pull = digitalio.Pull.UP
+counter = 0
+interrupt = False
 while True:
-    print("hey man")
-    time.monotonic(4)
+    if interrupter.value == 1:       
+            counter = counter + 1       #count up by one if counter value = 1 
+            time.sleep(0.2)
+    if time.monotonic() - newt >=4:
+        newt = time.monotonic()
+        print ("the number of interrupts is " + str(counter))
+
+
