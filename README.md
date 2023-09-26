@@ -215,6 +215,48 @@ https://github.com/addddddy/engr3/assets/143544940/27924682-3d5d-4cbe-a117-53e67
 ### Reflection
 This assignment had much fewer lines of code then I first thought. I spend a while at first trying to create a whole reading for the potentiometer and then inputting it to the motor but actually what we had to do was reading the potentiometer value and then uploading it to the board and then letting the board do all the work. All we did was wire in our pin 5, then telling the board that were using the analog pin 1 for the potentiometer and the board would do the math itself and basically create a table for when the board hits different speed based on the values.
 
+## Photointeruppter
+
+### Description & Code Snippets
+Write a couple sentences here, describing this assignment, and make sure that you hit these two points:
+* What was the goal of the assignment?
+* How did you accomplish that goal?
+  How you accomplished the goal is NOT a reflection, it is you telling the reader how to do this assignment, in broad strokes.
+
+  Your description is the right place to draw the reader's attention to any important chunks of code. Here's how you make code look like code:
+
+```python
+import time
+import board, digitalio
+newt = 0
+interrupter = digitalio.DigitalInOut(board.D7)
+interrupter.pull = digitalio.Pull.UP
+counter = 0
+interrupt = False
+while True:
+    if interrupter.value == 1:       
+            counter = counter + 1       #count up by one if counter value = 1 
+            time.sleep(0.2)
+    if time.monotonic() - newt >=1:
+        newt = time.monotonic()
+        print ("the number of interrupts is " + str(counter))
+
+
+
+```
+
+[link to code](https://github.com/lwylie10/engr3/blob/main/photosensor.py)
+### Evidence
+![My Project](https://github.com/lwylie10/engr3/assets/143749987/ed235ea1-b424-4ad1-bfe0-54313162783f)
+
+### Wiring
+[tinkercad.com](https://www.tinkercad.com/learn/circuits).  If you can't find the particular part you need, get creative, and just drop a note into the circuit diagram, explaining.
+For example, I use an Arduino Uno to represent my Circuitpython device but write a note saying which board I'm actually using.
+Then post an image here.   [Here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
+### Reflection
+Don't just tell the reader what went wrong or was challenging!  Describe how you figured it out, share the things that helped you succeed (tutorials, other people's repos, etc.), and then share what you learned from that experience.  **Your underlying goal for the reflection, is to concisely pass on the RIGHT knowledge that will help the reader recreate this assignment better or more easily.  Pass on your wisdom!**
+
+
 
 ## NextAssignment
 
