@@ -255,6 +255,45 @@ Then post an image here.   [Here's a quick tutorial for all markdown code, like 
 Don't just tell the reader what went wrong or was challenging!  Describe how you figured it out, share the things that helped you succeed (tutorials, other people's repos, etc.), and then share what you learned from that experience.  **Your underlying goal for the reflection, is to concisely pass on the RIGHT knowledge that will help the reader recreate this assignment better or more easily.  Pass on your wisdom!**
 
 
+## The Hanger
+
+### Assignment Description
+
+Create the hanger part from the part's drawings in Onshape
+### Evidence
+![Part Studio 1](https://github.com/lwylie10/engr3/assets/143749987/aa534b2d-670c-4d9f-a3c9-2effd1606455)
+![Part Studio 1 (1)](https://github.com/lwylie10/engr3/assets/143749987/90a9b0bd-836f-4378-a2e2-94b47c8e146b)
+![Part Studio 1 (2)](https://github.com/lwylie10/engr3/assets/143749987/9439c5ba-0621-4006-9213-2da3b8a5c526)
+
+
+### Part Link 
+
+https://cvilleschools.onshape.com/documents/cb51d22aa62457813195827b/w/fd14b48316a7b15a5e5201a9/e/55beb68e2ef303168d330227?renderMode=0&uiState=651c6008b5a79f484def1c1a
+
+### Reflection
+
+At first I started to just draw the part based on looking at it from the front side which took a while because i had to use a three point arc. The part was overall not that hard because there weren't too many challenges to it, it was mostly just using lines to draw it, creating constraints, and then I finished with mirroring it over the center line. I really enjoy using the mirror tool because as long as it's symmetric, you only kind of have to do half of the work.
+
+## Onshape_Assignment_Template
+
+### Assignment Description
+
+Write your assignment description here. What is the purpose of this assignment? It should be at least a few sentences.
+
+### Evidence
+
+Take several cropped screenshots of your Onshape document from different angles. Try to capture all important aspects of the design. Turn off overlays that obscure the parts, such as planes or mate connectors. Your images should have captions, so the reader knows what they are looking at!  
+
+### Part Link 
+
+[Create a link to your Onshape document](https://cvilleschools.onshape.com/documents/003e413cee57f7ccccaa15c2/w/ea71050bb283bf3bf088c96c/e/c85ae532263d3b551e1795d0?renderMode=0&uiState=62d9b9d7883c4f335ec42021). Don't forget to turn on link sharing in your Onshape document so that others can see it. 
+
+### Reflection
+
+What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience? Your goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person. Think about your audience for this one, which may be "future you" (when you realize you need some of this code in three months), me, or your college admission committee!
+
+&nbsp;
+
 
 ## NextAssignment
 
