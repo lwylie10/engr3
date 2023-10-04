@@ -5,7 +5,8 @@
 * [Hello_CircuitPython](#Hello_CircuitPython)
 * [CircuitPython_Servo](#CircuitPython_Servo)
 * [Circuit Python Distance Sensor](#Circuit_Python_Distance_Sensor)
-* 
+* [Motor Control](#Motor_Control)
+* [Photointerrupter](#Photointerrupter)
 * [NextAssignmentGoesHere](#NextAssignment)
 ---
 
@@ -187,7 +188,7 @@ https://github.com/addddddy/engr3/assets/143544940/452524df-8441-4da1-8679-6953b
 ### Reflection
 The assignment took me a week because at first i spent a really long time trying to figure out my buggy board issues but once i figured out what the problem was, i could work on my code. i first did the simple part which was making an if statement to change the color of the neopixel based on the values that the distance sensor was printing out. then i had to add the library. once i looked up the commands and all of the code it was easy to paste in the rest of the code to make it work. it was fun to watch the colors change.
 
-## Motor Control
+## Motor_Control
 
 ### Description & Code Snippets
  
