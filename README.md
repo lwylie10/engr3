@@ -6,7 +6,7 @@
 * [CircuitPython_Servo](#CircuitPython_Servo)
 * [Circuit Python Distance Sensor](#Circuit_Python_Distance_Sensor)
 * [Motor Control](#Motor_Control)
-* [Photointerrupter](#Photointerrupter)
+* [Photointeruppter](#Photointeruppter)
 * [NextAssignmentGoesHere](#NextAssignment)
 ---
 
