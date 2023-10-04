@@ -1,12 +1,13 @@
 # CircuitPython
  [ directory of all students!](https://github.com/chssigma/Class_Accounts)
 ## Table of Contents
-* [Table of Contents](#TableOfContents)
+* ### Arduino
 * [Hello_CircuitPython](#Hello_CircuitPython)
 * [CircuitPython_Servo](#CircuitPython_Servo)
 * [Circuit Python Distance Sensor](#Circuit_Python_Distance_Sensor)
 * [Motor Control](#Motor_Control)
 * [Photointeruppter](#Photointeruppter)
+* ### Onshape
 * [NextAssignmentGoesHere](#NextAssignment)
 ---
 
