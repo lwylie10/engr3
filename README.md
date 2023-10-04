@@ -274,6 +274,22 @@ https://cvilleschools.onshape.com/documents/cb51d22aa62457813195827b/w/fd14b4831
 
 At first I started to just draw the part based on looking at it from the front side which took a while because i had to use a three point arc. The part was overall not that hard because there weren't too many challenges to it, it was mostly just using lines to draw it, creating constraints, and then I finished with mirroring it over the center line. I really enjoy using the mirror tool because as long as it's symmetric, you only kind of have to do half of the work.
 
+## Swing arm
+
+### Assignment Description
+make a swing arm from drawings provided
+### Evidence
+![Part Studio 1 (4)](https://github.com/lwylie10/engr3/assets/143749987/ea60f246-01bc-4756-8192-3ae312bae406)
+![Part Studio 1 (3)](https://github.com/lwylie10/engr3/assets/143749987/4e140f96-c3fb-48ba-9dff-c001c9a0e557)
+
+### Part Link 
+https://cvilleschools.onshape.com/documents/d86e8a80871c06c2c8cee8dc/w/931ca79e48787292e18c4e8b/e/5876e6c59462faa80b29df9d?renderMode=0&uiState=651da6ebeaa442355009bb8f
+
+### Reflection
+
+What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience? Your goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person. Think about your audience for this one, which may be "future you" (when you realize you need some of this code in three months), me, or your college admission committee!
+
+
 ## Onshape_Assignment_Template
 
 ### Assignment Description
@@ -292,7 +308,6 @@ Take several cropped screenshots of your Onshape document from different angles.
 
 What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience? Your goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person. Think about your audience for this one, which may be "future you" (when you realize you need some of this code in three months), me, or your college admission committee!
 
-&nbsp;
 
 
 ## NextAssignment
