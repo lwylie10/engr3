@@ -280,7 +280,7 @@ At first I started to just draw the part based on looking at it from the front s
 ## Swing arm
 
 ### Assignment Description
-make a swing arm from drawings provided
+Make a swing arm from drawings provided
 ### Evidence
 ![Part Studio 1 (4)](https://github.com/lwylie10/engr3/assets/143749987/ea60f246-01bc-4756-8192-3ae312bae406)
 ![Part Studio 1 (3)](https://github.com/lwylie10/engr3/assets/143749987/4e140f96-c3fb-48ba-9dff-c001c9a0e557)
@@ -290,8 +290,7 @@ https://cvilleschools.onshape.com/documents/d86e8a80871c06c2c8cee8dc/w/931ca79e4
 
 ### Reflection
 
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience? Your goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person. Think about your audience for this one, which may be "future you" (when you realize you need some of this code in three months), me, or your college admission committee!
-
+The Swing Arm was definely harder then the hanger because it had a lot of complicated parts to it. I started off with drawing it on the front plan and sort of dimensioning it to get it mostly looking like how it should. Then i started extruding and I worked on the 3D parts that I couldn't draw. I struggled a lot to get the mass right once I changed the variables because I had a problem that I should've used the coincident tool instead of just dimensioning one thing to another part. I eventually fixed the variable problems and got the right mass by trial and error and using the rollback bar. 
 
 ## Onshape_Assignment_Template
 
