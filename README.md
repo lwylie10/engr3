@@ -259,9 +259,9 @@ Don't just tell the reader what went wrong or was challenging!  Describe how you
 
 
 ## The Hanger
-# 💋
+
 ### Assignment Description
-# 🐱‍👓
+
 Create the hanger part from the part's drawings in Onshape
 ### Evidence
 ![Part Studio 1](https://github.com/lwylie10/engr3/assets/143749987/aa534b2d-670c-4d9f-a3c9-2effd1606455)
