@@ -292,6 +292,25 @@ https://cvilleschools.onshape.com/documents/d86e8a80871c06c2c8cee8dc/w/931ca79e4
 
 The Swing Arm was definely harder then the hanger because it had a lot of complicated parts to it. I started off with drawing it on the front plan and sort of dimensioning it to get it mostly looking like how it should. Then i started extruding and I worked on the 3D parts that I couldn't draw. I struggled a lot to get the mass right once I changed the variables because I had a problem that I should've used the coincident tool instead of just dimensioning one thing to another part. I eventually fixed the variable problems and got the right mass by trial and error and using the rollback bar. 
 
+## Multi-Part Design Studios - Practice
+
+### Assignment Description
+
+Create a multi-part shape in onshape based off of documents and then being able to change parts of the design which in turn affects the rest of the part
+### Evidence
+
+![Part Studio 1 (6)](https://github.com/lwylie10/engr3/assets/143749987/861f2974-cf86-447f-9fb8-844686672970)
+Front View 
+![Part Studio 1 (5)](https://github.com/lwylie10/engr3/assets/143749987/9a572e04-b9fd-4632-b169-ec41cd569fde)
+Isometric View
+
+### Part Link 
+
+https://cvilleschools.onshape.com/documents/d8fb8aa520bb0bd546d988d3/w/f2aa70a75d91551ae9121758/e/1915032864752f764a7444b0?renderMode=0&uiState=6540015e32d8e777c5b6d3c6
+
+### Reflection
+
+This assignment took me a lot longer then it should have. I started off by not using the starting cylinder which definetly wasn't smart and it caused problems later in the design. I went down the line, creating the different parts based on each other and most of them didn't take too long. Once i hit the next couple questions, I struggled because not all of my dimensions worked correctly and they would break when I changed one of them. Next time I would definetly make sure to check all of my dimensions and also read the instructions more carefully because I totally missed the cylinder that it gave us in the beginning. I would also make sure that the dimenstions that were in parenthesis weren't incorperated into my design because it created problems for me later when I tried to change a part's dimension. I enjoyed this assignment a ton but it also showed me how fast I really will have to do this and I definetly need to study for the Onshape Certification exam. 
 ## Onshape_Assignment_Template
 
 ### Assignment Description
