@@ -311,6 +311,30 @@ https://cvilleschools.onshape.com/documents/d8fb8aa520bb0bd546d988d3/w/f2aa70a75
 ### Reflection
 
 This assignment took me a lot longer then it should have. I started off by not using the starting cylinder which definetly wasn't smart and it caused problems later in the design. I went down the line, creating the different parts based on each other and most of them didn't take too long. Once i hit the next couple questions, I struggled because not all of my dimensions worked correctly and they would break when I changed one of them. Next time I would definetly make sure to check all of my dimensions and also read the instructions more carefully because I totally missed the cylinder that it gave us in the beginning. I would also make sure that the dimenstions that were in parenthesis weren't incorperated into my design because it created problems for me later when I tried to change a part's dimension. I enjoyed this assignment a ton but it also showed me how fast I really will have to do this and I definetly need to study for the Onshape Certification exam. 
+
+## Onshape Certification Prep 1: Single Part
+
+### Assignment Description
+
+To practice for the Onshape exam and work more efficiently making single parts in Onshape.
+
+### Evidence
+![Part Studio 1 (7)](https://github.com/lwylie10/engr3/assets/143749987/25be1725-45b7-43db-a13b-4b192125a7a6)
+Isometric View
+![Part Studio 1 (8)](https://github.com/lwylie10/engr3/assets/143749987/ed7c88d3-2bf2-423d-a248-51e7bbbec4d9)
+Front View
+![Part Studio 1 (9)](https://github.com/lwylie10/engr3/assets/143749987/6174059b-d8ef-4a39-b7eb-ab606438bc9c)
+Side View
+
+
+### Part Link 
+
+https://cvilleschools.onshape.com/documents/a688cd91fd45a4550313079a/w/9abaaa43fc1bcb2888b36522/e/244cbb91239fa99c23a4ec96?renderMode=0&uiState=654154cc1156cb60f7c28e1c
+
+### Reflection
+
+The assignment went mostly well. I started by drawing on the front view and drawing the general outline of the shape and then mirroring it over the center line. I think next time maybe I wont mirror it because it kinda created a couple problems later in the part. I then extruded the part and worked on the side view to create the bottom cutout which all worked fine. Everything was working until question 4 which then like everything broke because I had to change a TYP dimension and because I didn't create a variable and that might've fixed my problem later in the challenge. I got all of the questions right in the quiz and I only really need Miller's help for one of the questions. I need to be able to do it faster though. 
+
 ## Onshape_Assignment_Template
 
 ### Assignment Description
