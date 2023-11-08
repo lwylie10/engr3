@@ -335,6 +335,26 @@ https://cvilleschools.onshape.com/documents/a688cd91fd45a4550313079a/w/9abaaa43f
 
 The assignment went mostly well. I started by drawing on the front view and drawing the general outline of the shape and then mirroring it over the center line. I think next time maybe I wont mirror it because it kinda created a couple problems later in the part. I then extruded the part and worked on the side view to create the bottom cutout which all worked fine. Everything was working until question 4 which then like everything broke because I had to change a TYP dimension and because I didn't create a variable and that might've fixed my problem later in the challenge. I got all of the questions right in the quiz and I only really need Miller's help for one of the questions. I need to be able to do it faster though. 
 
+## Alignment Plate
+
+### Assignment Description
+
+Create the alignment plate on the cad challenges
+
+### Evidence
+![Part Studio 2](https://github.com/lwylie10/engr3/assets/143749987/6415a147-bdc5-4f3a-bb6d-be67e35497d1)
+isometric
+![Part Studio 2 (1)](https://github.com/lwylie10/engr3/assets/143749987/3b725288-2fdf-456a-b43c-1c7901182d3f)
+front
+
+### Part Link 
+
+https://cvilleschools.onshape.com/documents/cc6589a8c5b26f47e8434221/w/7d595a653a6c51d2beacefcc/e/6d1eaef25ef5e55bcc93c994?renderMode=0&uiState=654befd784c4093ec77c7bf0
+
+### Reflection
+
+This assignment was incredibly easy and it took me less then 10 minutes. I started by drawing a rectangle then I drew the circles into the sides of the rectangle where the drawings said they went. One thing i forgot to do was make sure the circle's dimensions were in diameter because the drawing gave me the radius and I forgot to multiply it by 2. I would probably start by mirroring the entire thing next time because it would make changing one side of the piece easier.   
+
 ## Onshape_Assignment_Template
 
 ### Assignment Description
