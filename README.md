@@ -14,7 +14,7 @@
 ## Hello_CircuitPython
 
 ### Description & Code Snippets
-Assignment: Get an RGB LED to cycle through a bunch of colors, but prettily. It should gradually shift colors, cycling through the entire rainbow. We ended up using an example neopixel code from "the complete Adafruit Library" and loading that after changing a few things, such as how fast it goes through the cycle.
+The assignment was to use code to get an RGB LED glowing in a rainbow pattern and make it fade in and out between colors really smoothly.
 
 ```python
 
@@ -46,18 +46,13 @@ We literally had no wiring. The neopixel is directly attached to the board, so a
 Image credit goes to [Lady Ada](https://learn.adafruit.com/adafruit-metro-m0-express)
 
 ### Reflection
-This was, at first, a confusing assignment. With no prior knowledge of any code of any sort, I was really confused. I spent the first two days just staring at the computer and doing nothing. Finally, I jumped right in. I spent about a whole day just googling up random commands before we got the wise advice to just find an example code. So that is precisely what we did. We used a random code example labeled something along the lines of "neopixel rainbow test" from "the complete Adafruit Library". All that we had to do was press run. It happened to be perfect, all we  had to do was adjust a few  lines of  code and it  ran perfectly.
-
+I started with googling for the code and i found code called some along the lines of "neopixel rainbow test". All I had to do after that was rewrite a couple of the lines to fix some of the bugs my board had with it and then it worked fine. It was a fun assignment and using the pixel index was cool and I was able to change how fast the color changed between 0 and 256.
 
 ## CircuitPython_Servo
 
 ### Description & Code Snippets
-Write a couple sentences here, describing this assignment, and make sure that you hit these two points:
-* What was the goal of the assignment?
-* How did you accomplish that goal?
-  How you accomplished the goal is NOT a reflection, it is you telling the reader how to do this assignment, in broad strokes.
 
-  Your description is the right place to draw the reader's attention to any important chunks of code. Here's how you make code look like code:
+The assignment is to get a 180° micro servo to slowly sweep back and forth between 0 and 180°.   
 
 ```python
 import time
@@ -187,7 +182,7 @@ https://github.com/addddddy/engr3/assets/143544940/452524df-8441-4da1-8679-6953b
 ![image](https://github.com/lwylie10/engr3/assets/143749987/1cccb58a-4a70-44e3-95d9-08bcda33996e)
 
 ### Reflection
-The assignment took me a week because at first i spent a really long time trying to figure out my buggy board issues but once i figured out what the problem was, i could work on my code. i first did the simple part which was making an if statement to change the color of the neopixel based on the values that the distance sensor was printing out. then i had to add the library. once i looked up the commands and all of the code it was easy to paste in the rest of the code to make it work. it was fun to watch the colors change.
+The assignment took me a week because at first i spent a really long time trying to figure out my buggy board issues but once i figured out what the problem was, i could work on my code. i first did the simple part which was making an if statement to change the color of the neopixel based on the values that the distance sensor was printing out. then i had to add the library. once i looked up the commands and all of the code it was easy to paste in the rest of the code to make it work. it was fun to watch the colors change. <- i wrote this :)
 
 ## Motor_Control
 
@@ -216,7 +211,10 @@ https://github.com/addddddy/engr3/assets/143544940/27924682-3d5d-4cbe-a117-53e67
 ![image](https://github.com/addddddy/engr3/assets/143544940/5020c688-c09c-4a59-a916-80cab3360c4b)
 
 ### Reflection
-This assignment had much fewer lines of code then I first thought. I spend a while at first trying to create a whole reading for the potentiometer and then inputting it to the motor but actually what we had to do was reading the potentiometer value and then uploading it to the board and then letting the board do all the work. All we did was wire in our pin 5, then telling the board that were using the analog pin 1 for the potentiometer and the board would do the math itself and basically create a table for when the board hits different speed based on the values.
+So, the assignment turned out to be way easier than I thought at first. Spent ages trying to set up this elaborate system for reading the potentiometer and controlling the motor, only to find out we just had to read the potentiometer value, send it to the board, and let the board do the heavy lifting. All we did was hook up pin 5, told the board we're using analog pin 1 for the potentiometer, and boom, the board did all the math, creating the table for different speeds based on the values.
+
+
+
 
 ## Photointeruppter
 
