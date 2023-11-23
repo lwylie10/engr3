@@ -10,9 +10,7 @@
 ### Onshape
 * [NextAssignmentGoesHere](#NextAssignment)
 ---
-
-## Hello_CircuitPython
-
+## Hello_CircuitPython🌹
 ### Description & Code Snippets
 The assignment was to use code to get an RGB LED glowing in a rainbow pattern and make it fade in and out between colors really smoothly.
 
@@ -111,8 +109,7 @@ This beautiful GIF was finely produced by Addy Buckner
 This assignment was definitly harder then the last one because I had to spend a long time on tweaking the servo values and the different commands to make it less buggy. I had the most trouble with making sure that wherever the servo arm was, when i clicked the button it would move 90 degrees in the direction i wanted it to. it challenged me to think about the way i was coding and what values i had to use to make it less buggy.
 
 
-## Circuit_Python_Distance_Sensor
-
+## Circuit_Python_Distance_Sensor🌷
 ### Description & Code Snippets
 Use the HC-SR04 to measure the distance to an object and print that out to your serial monitor or LCD in cm.
 Next, you will get the neopixel to turn red when your object is less than 5cm, and green when its 35cm. For the final version of this code, you'll smoothly shift the color of the onboard neopixel, corresponding to the distance, according to the graphic below.
@@ -184,8 +181,7 @@ https://github.com/addddddy/engr3/assets/143544940/452524df-8441-4da1-8679-6953b
 ### Reflection
 The assignment took me a week because at first i spent a really long time trying to figure out my buggy board issues but once i figured out what the problem was, i could work on my code. i first did the simple part which was making an if statement to change the color of the neopixel based on the values that the distance sensor was printing out. then i had to add the library. once i looked up the commands and all of the code it was easy to paste in the rest of the code to make it work. it was fun to watch the colors change. <- i wrote this :)
 
-## Motor_Control
-
+## Motor_Control🪻
 ### Description & Code Snippets
  
 I have to wire up a 6v battery pack to a circuit with a motor and then write the code to make the motor speed up and slow down, based on input from a potentiometer.
@@ -216,8 +212,7 @@ So, the assignment turned out to be way easier than I thought at first. Spent ag
 
 
 
-## Photointeruppter
-
+## Photointeruppter🌻
 ### Description & Code Snippets
 Wire up your photointerrupter and have it keep track of how many times it has been interrupted.
 Your program outputs the count using a full sentence like "The number of interrupts is: ___" or "I have been interrupted ___ times."
@@ -256,8 +251,7 @@ Then post an image here.   [Here's a quick tutorial for all markdown code, like 
 Don't just tell the reader what went wrong or was challenging!  Describe how you figured it out, share the things that helped you succeed (tutorials, other people's repos, etc.), and then share what you learned from that experience.  **Your underlying goal for the reflection, is to concisely pass on the RIGHT knowledge that will help the reader recreate this assignment better or more easily.  Pass on your wisdom!**
 
 
-## The Hanger
-
+## The Hanger🌾
 ### Assignment Description
 
 Create the hanger part from the part's drawings in Onshape
@@ -275,8 +269,7 @@ https://cvilleschools.onshape.com/documents/cb51d22aa62457813195827b/w/fd14b4831
 
 At first I started to just draw the part based on looking at it from the front side which took a while because i had to use a three point arc. The part was overall not that hard because there weren't too many challenges to it, it was mostly just using lines to draw it, creating constraints, and then I finished with mirroring it over the center line. I really enjoy using the mirror tool because as long as it's symmetric, you only kind of have to do half of the work.
 
-## Swing arm
-
+## Swing arm🌹
 ### Assignment Description
 Make a swing arm from drawings provided
 ### Evidence
@@ -290,8 +283,7 @@ https://cvilleschools.onshape.com/documents/d86e8a80871c06c2c8cee8dc/w/931ca79e4
 
 The Swing Arm was definely harder then the hanger because it had a lot of complicated parts to it. I started off with drawing it on the front plan and sort of dimensioning it to get it mostly looking like how it should. Then i started extruding and I worked on the 3D parts that I couldn't draw. I struggled a lot to get the mass right once I changed the variables because I had a problem that I should've used the coincident tool instead of just dimensioning one thing to another part. I eventually fixed the variable problems and got the right mass by trial and error and using the rollback bar. 
 
-## Multi-Part Design Studios - Practice
-
+## Multi-Part Design Studios - Practice🌷
 ### Assignment Description
 
 Create a multi-part shape in onshape based off of documents and then being able to change parts of the design which in turn affects the rest of the part
@@ -310,8 +302,7 @@ https://cvilleschools.onshape.com/documents/d8fb8aa520bb0bd546d988d3/w/f2aa70a75
 
 This assignment took me a lot longer then it should have. I started off by not using the starting cylinder which definetly wasn't smart and it caused problems later in the design. I went down the line, creating the different parts based on each other and most of them didn't take too long. Once i hit the next couple questions, I struggled because not all of my dimensions worked correctly and they would break when I changed one of them. Next time I would definetly make sure to check all of my dimensions and also read the instructions more carefully because I totally missed the cylinder that it gave us in the beginning. I would also make sure that the dimenstions that were in parenthesis weren't incorperated into my design because it created problems for me later when I tried to change a part's dimension. I enjoyed this assignment a ton but it also showed me how fast I really will have to do this and I definetly need to study for the Onshape Certification exam. 
 
-## Onshape Certification Prep 1: Single Part
-
+## Onshape Certification Prep 1: Single Part🪻
 ### Assignment Description
 
 To practice for the Onshape exam and work more efficiently making single parts in Onshape.
@@ -333,8 +324,7 @@ https://cvilleschools.onshape.com/documents/a688cd91fd45a4550313079a/w/9abaaa43f
 
 The assignment went mostly well. I started by drawing on the front view and drawing the general outline of the shape and then mirroring it over the center line. I think next time maybe I wont mirror it because it kinda created a couple problems later in the part. I then extruded the part and worked on the side view to create the bottom cutout which all worked fine. Everything was working until question 4 which then like everything broke because I had to change a TYP dimension and because I didn't create a variable and that might've fixed my problem later in the challenge. I got all of the questions right in the quiz and I only really need Miller's help for one of the questions. I need to be able to do it faster though. 
 
-## Alignment Plate
-
+## Alignment Plate🌻
 ### Assignment Description
 
 Create the alignment plate on the cad challenges
@@ -353,8 +343,7 @@ https://cvilleschools.onshape.com/documents/cc6589a8c5b26f47e8434221/w/7d595a653
 
 This assignment was incredibly easy and it took me less then 10 minutes. I started by drawing a rectangle then I drew the circles into the sides of the rectangle where the drawings said they went. One thing i forgot to do was make sure the circle's dimensions were in diameter because the drawing gave me the radius and I forgot to multiply it by 2. I would probably start by mirroring the entire thing next time because it would make changing one side of the piece easier.   
 
-## Onshape_Assignment_Template
-
+## Onshape_Assignment_Template🌾
 ### Assignment Description
 
 Write your assignment description here. What is the purpose of this assignment? It should be at least a few sentences.
