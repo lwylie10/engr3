@@ -10,7 +10,7 @@
 ### Onshape
 * [NextAssignmentGoesHere](#NextAssignment)
 ---
-## Hello_CircuitPython🌹
+## Hello_CircuitPython🌾
 ### Description & Code Snippets
 The assignment was to use code to get an RGB LED glowing in a rainbow pattern and make it fade in and out between colors really smoothly.
 
@@ -46,7 +46,7 @@ Image credit goes to [Lady Ada](https://learn.adafruit.com/adafruit-metro-m0-exp
 ### Reflection
 I started with googling for the code and i found code called some along the lines of "neopixel rainbow test". All I had to do after that was rewrite a couple of the lines to fix some of the bugs my board had with it and then it worked fine. It was a fun assignment and using the pixel index was cool and I was able to change how fast the color changed between 0 and 256.
 
-## CircuitPython_Servo
+## CircuitPython_Servo🌹
 
 ### Description & Code Snippets
 
