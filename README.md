@@ -250,7 +250,75 @@ Then post an image here.   [Here's a quick tutorial for all markdown code, like 
 ### Reflection
 Don't just tell the reader what went wrong or was challenging!  Describe how you figured it out, share the things that helped you succeed (tutorials, other people's repos, etc.), and then share what you learned from that experience.  **Your underlying goal for the reflection, is to concisely pass on the RIGHT knowledge that will help the reader recreate this assignment better or more easily.  Pass on your wisdom!**
 
+## Rotary Encoder and LCD
 
+### Description & Code Snippets
+our assignment is to use a rotary encoder, an LCD, and the on-board NeoPixel LED to create a menu-based traffic light control.
+Steps:
+-Create a list of strings for stop, caution, go. 
+-Read the rotary encoder to cycle through the menu items and display them on the LCD.
+-Make the on-board LED turn red, yellow, or green when the rotary encoder is pressed down on the corresponding menu item.
+
+```python
+import rotaryio
+import time
+import board
+import neopixel
+import digitalio
+from lcd.lcd import LCD
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
+enc = rotaryio.IncrementalEncoder(board.D4, board.D3, divisor=2)
+led = neopixel.NeoPixel(board.NEOPIXEL, 1)
+led.brightness = 0.3
+led[0] = (255, 0, 0)
+lcd = LCD(I2CPCF8574Interface(board.I2C(), 0x27), num_rows=2, num_cols=16)
+button = digitalio.DigitalInOut(board.D2)
+button.direction = digitalio.Direction.INPUT
+button.pull = digitalio.Pull.UP
+button_state = None
+menu = ["stop", "caution", "go"]
+last_index = None
+menu_index = 0
+
+while True:
+    if not button.value and button_state is None:
+        button_state = "pressed"
+    if button.value and button_state == "pressed":
+        print("Button is pressed")
+        button_state = None
+    menu_index = enc.position
+    #if last_index == None or menu_index != last_index:
+        #print(menu_index)
+    menu_index_lcd = menu_index % 3
+    #print(menu_index_lcd)
+    menu[menu_index_lcd]
+    print(menu[menu_index_lcd])
+    time.sleep(0.2)
+    lcd.set_cursor_pos(0,0)
+    lcd.print("Push For: ")
+    lcd.set_cursor_pos(1,0)
+    lcd.print("          ")
+    lcd.set_cursor_pos(1,0)
+    lcd.print(menu[menu_index_lcd])
+    if menu_index_lcd == 0:
+     led[0] = (255, 0, 0)
+    if menu_index_lcd == 1:
+     led[0] = (255, 255, 0)
+    if menu_index_lcd == 2:
+     led[0] = (0, 255, 0)
+
+```
+
+**Lastly, please end this section with a link to your code or file.**  
+[link to code](https://github.com/lwylie10/engr3/blob/main/rotaryencoder.py)
+### Evidence
+
+https://github.com/lwylie10/engr3/assets/143749987/072f673a-4be0-477d-8d70-04ea0b288725
+
+### Wiring
+[tinkercad.com](https://www.tinkercad.com/learn/circuits).  If you can't find the particular part you need, get creative, and just drop a note into the circuit diagram, explaining.
+For example, I use an Arduino Uno to represent my Circuitpython device but write a note saying which board I'm actually using.
+Then post an image here.   [Here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
 ## The Hanger🌾
 ### Assignment Description
 
