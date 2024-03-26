@@ -316,9 +316,146 @@ while True:
 https://github.com/lwylie10/engr3/assets/143749987/072f673a-4be0-477d-8d70-04ea0b288725
 
 ### Wiring
+![Rotaryencoder](https://github.com/lwylie10/engr3/assets/143749987/48388a0f-a607-494a-b2e6-ae77b4484094)
+
+
+## Reflection
+This assignment was pretty difficult. Me and addy began working on it together and realized that we forgot to download all of the libraries which gave us many errors. I also had some trouble with following and tracking the spot of the rotary encoder and I had to code around that a bit. Another thing I struggled with was using the variable "menu_index_lcd" because I had to import it into the assignment so many times. Most of my errors consisted of indentation or parenthesis errors because the context was messed up or I screwed up the braces and brackets.
+
+
+## Code - Stepper Motor + Limit Switch
+
+### Assignment Description
+
+The goal of this assignment was to program a stepper motor to rotate until it touches the limit switch and then rotate 180 degrees in reverse when it contacts with the motor arm. This assignment was important as it teaches one to use the stepper motor which will come in handy for the robot arm project.
+
+### Wiring Diagram
+![Steppermotor](https://github.com/lwylie10/engr3/assets/143749987/1ba4b071-90d4-47b6-b201-07fdc24168c9)
+
+
+### Code
+```python
+
+import asyncio
+import board
+import keypad
+import time
+import digitalio
+from adafruit_motor import stepper
+
+
+DELAY = 0.01  
+STEPS = 100
+coils = (
+    digitalio.DigitalInOut(board.D9),   # A1
+    digitalio.DigitalInOut(board.D10),  # A2
+    digitalio.DigitalInOut(board.D11),  # B1
+    digitalio.DigitalInOut(board.D12),  # B2
+)
+
+
+for coil in coils:
+    coil.direction = digitalio.Direction.OUTPUT
+motor = stepper.StepperMotor(coils[0], coils[1], coils[2], coils[3], microsteps=None)
+
+async def catch_pin_transitions(pin):
+
+    with keypad.Keys((pin,), value_when_pressed=False) as keys:
+        while True:
+            event = keys.events.get()
+            if event:
+                if event.pressed:
+                    print("Limit Switch was pressed.")
+                    for step in range(STEPS):
+                        motor.onestep(direction=stepper.BACKWARD, style=stepper.DOUBLE)
+                        time.sleep(DELAY)
+                elif event.released:
+                    print("Limit Switch was released.")
+            await asyncio.sleep(0)
+
+async def run_motor():
+    while(True):
+        motor.onestep(style=stepper.DOUBLE)
+        time.sleep(DELAY)
+        await asyncio.sleep(0)
+
+async def main():
+    while(True):
+        interrupt_task = asyncio.create_task(catch_pin_transitions(board.D2))
+        motor_task = asyncio.create_task(run_motor())
+        await asyncio.gather(interrupt_task, motor_task)
+
+asyncio.run(main())
+```
+
+### Reflection
+
+This assignment was pretty easy except for that I didn't realize that the assignment on canvas had already provided wiring for the H-bridge and the stepper motor and I struggled with making it for myself until benji let me know that I didn't have to do all that work. After that it wasn't that bad. I learned how to use the tool "async" a lot more with running the motor even though I had to look up a couple of times the right way to properly use it. The if statements were also a bit tricky getting all of the indentations correct and fixed up.
+
+## IR Sensors
+
+### Description & Code Snippets
+This assignment I had to use an infrared (IR) sensor to change the color of my board’s Neopixel LED. It had to change the color red when there was an object nearby and green when there was nothing in the way
+
+```python
+import board
+import neopixel
+import digitalio
+
+# Set up the IR Sensor using digital pin2.
+ir_sensor = digitalio.DigitalInOut(board.D2)
+
+# Set the photointerupter as an input.
+ir_sensor.direction = digitalio.Direction.INPUT
+
+# use the internal pull-up resistor.
+ir_sensor.pull = digitalio.Pull.UP
+
+#while loop runs the inside continuously.
+
+while True:
+
+   # if an object is near the IR sensor (sensor is LOW):
+       #Print something to ther Serial Monitor.
+ 
+
+ #if nothing is near the IR sensor (sensor is HIGH):
+   #Print something to the Serial Monitor.
+
+   #Intialize the on-board neopixel and set the brightness.
+led = neopixel.NeoPixel(board.NEOPIXEL, 1 )
+Led.brightness = 0.3
+
+   #While loop runs the code inside continuously.
+   
+while True:
+ # if an object is near the IR sensor (sensor is LOW):
+ #print something to the Serial Monitor.
+
+ #if nothing is near the IR sensor(sensor is HIGH):
+ #Print something to the Serial Monitor.
+ # Intialize the on-board neopixel and set the brightness.
+ led = neopixel.NeoPixel(board.NEOPIXEL, 1)
+ led.brightness = 0.3
+ #While loop runs the code inside continuously.
+ while True:
+   #If an object is near the IR sensor (sensor is LOW):
+       #Set the NeoPixel's color tp RED.
+
+#If nothing is near the IR sensor (sensor is HIGH):
+  #Set the NeoPixel's color to GREEN.
+```
+
+**Lastly, please end this section with a link to your code or file.**  
+
+### Evidence
+
+### Wiring
 [tinkercad.com](https://www.tinkercad.com/learn/circuits).  If you can't find the particular part you need, get creative, and just drop a note into the circuit diagram, explaining.
 For example, I use an Arduino Uno to represent my Circuitpython device but write a note saying which board I'm actually using.
 Then post an image here.   [Here's a quick tutorial for all markdown code, like making links](https://guides.github.com/features/mastering-markdown/)
+### Reflection
+Don't just tell the reader what went wrong or was challenging!  Describe how you figured it out, share the things that helped you succeed (tutorials, other people's repos, etc.), and then share what you learned from that experience.  **Your underlying goal for the reflection, is to concisely pass on the RIGHT knowledge that will help the reader recreate this assignment better or more easily.  Pass on your wisdom!**
 ## The Hanger🌾
 ### Assignment Description
 
