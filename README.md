@@ -351,7 +351,7 @@ https://cvilleschools.onshape.com/documents/d86e8a80871c06c2c8cee8dc/w/931ca79e4
 
 The Swing Arm was definely harder then the hanger because it had a lot of complicated parts to it. I started off with drawing it on the front plan and sort of dimensioning it to get it mostly looking like how it should. Then i started extruding and I worked on the 3D parts that I couldn't draw. I struggled a lot to get the mass right once I changed the variables because I had a problem that I should've used the coincident tool instead of just dimensioning one thing to another part. I eventually fixed the variable problems and got the right mass by trial and error and using the rollback bar. 
 
-## Multi-Part Design Studios - Practice🌷
+## Multi-Part Cylinder Studios - Practice🌷
 ### Assignment Description
 
 Create a multi-part shape in onshape based off of documents and then being able to change parts of the design which in turn affects the rest of the part
@@ -373,7 +373,7 @@ This assignment took me a lot longer then it should have. I started off by not u
 ## Onshape Certification Prep 1: Single Part🪻
 ### Assignment Description
 
-To practice for the Onshape exam and work more efficiently making single parts in Onshape.
+To practice for the Onshape exam and work more efficiently making single parts in Onshape. Create a single part from a drawing and dimensions.
 
 ### Evidence
 ![Part Studio 1 (7)](https://github.com/lwylie10/engr3/assets/143749987/25be1725-45b7-43db-a13b-4b192125a7a6)
@@ -392,24 +392,68 @@ https://cvilleschools.onshape.com/documents/a688cd91fd45a4550313079a/w/9abaaa43f
 
 The assignment went mostly well. I started by drawing on the front view and drawing the general outline of the shape and then mirroring it over the center line. I think next time maybe I wont mirror it because it kinda created a couple problems later in the part. I then extruded the part and worked on the side view to create the bottom cutout which all worked fine. Everything was working until question 4 which then like everything broke because I had to change a TYP dimension and because I didn't create a variable and that might've fixed my problem later in the challenge. I got all of the questions right in the quiz and I only really need Miller's help for one of the questions. I need to be able to do it faster though. 
 
-## Alignment Plate🌻
+## Onshape Cert prep 3: Assemblies🌾
 ### Assignment Description
 
-Create the alignment plate on the cad challenges
+To practice for the Onshape exam and work more efficiently making single parts in Onshape. Create multiple parts and then put them together and be able to use variables to edit it even faster.
 
 ### Evidence
-![Part Studio 2](https://github.com/lwylie10/engr3/assets/143749987/6415a147-bdc5-4f3a-bb6d-be67e35497d1)
-isometric
-![Part Studio 2 (1)](https://github.com/lwylie10/engr3/assets/143749987/3b725288-2fdf-456a-b43c-1c7901182d3f)
-front
+![Assembly 1 (2)](https://github.com/lwylie10/engr3/assets/143749987/eb1a8702-2126-443f-b91f-2cd479f57d23)
+Isometric   
+![Assembly 1](https://github.com/lwylie10/engr3/assets/143749987/ba7d11bc-f047-49a7-be04-ca04dca092da)
+Front
+
 
 ### Part Link 
 
-https://cvilleschools.onshape.com/documents/cc6589a8c5b26f47e8434221/w/7d595a653a6c51d2beacefcc/e/6d1eaef25ef5e55bcc93c994?renderMode=0&uiState=654befd784c4093ec77c7bf0
+https://cvilleschools.onshape.com/documents/249b51e00b18b2ed06594e22/w/5bbd9abeeaa192062fbb4613/e/38a064fa93a6db56269ce032?renderMode=0&uiState=660316c5a1fd246156d321ee
 
 ### Reflection
 
-This assignment was incredibly easy and it took me less then 10 minutes. I started by drawing a rectangle then I drew the circles into the sides of the rectangle where the drawings said they went. One thing i forgot to do was make sure the circle's dimensions were in diameter because the drawing gave me the radius and I forgot to multiply it by 2. I would probably start by mirroring the entire thing next time because it would make changing one side of the piece easier.   
+In this assignment, I learned a couple of new ways to use mates such as the drop down menu which made editing the mates much easier. Its a super useful tool that I can use in the future to move my projects along faster. This project was a little challenging because of the different degrees i had to rotate the part and I also had to give it limits to make it so it doesn't extend too far and look really funky. I should've taken the first couple questions slower because it would've made the later questions easier because I would only have had to change like 2 things about it but instead i had to fix the problems I had created earlier.
+
+## Onshape Cert prep 2: mic stand🌾
+### Assignment Description
+This assignment was to create a mic stand using a document to find all of the dimensions. We got a starting document which was the middle piece and then we had to build the mic holder and the pin off of that 
+
+### Evidence
+![Assembly 1 (4)](https://github.com/lwylie10/engr3/assets/143749987/a8a37feb-7028-4d00-a6ad-97b115d5d47c)
+front 
+![Assembly 1 (3)](https://github.com/lwylie10/engr3/assets/143749987/21ee6582-eaba-4770-a9dd-00968aec14ce)
+isometric
+
+### Part Link 
+
+https://cvilleschools.onshape.com/documents/f482eb7c1fa0828924e43521/w/ba1c0b0c9518351ea879255d/e/49e601df17a4eca631d1b200?renderMode=0&uiState=660319ed5bf834338503febe
+
+### Reflection
+
+What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience? Your goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person. Think about your audience for this one, which may be "future you" (when you realize you need some of this code in three months), me, or your college admission committee!
+
+I think one of my biggest problems with this assignment was putting in dimensions that had parenthesis around them. This took a lot of my time because those dimensions in parethessi were supposed to be based off of the other parts and not dimensioned on their own. So when I had to change them later or use a variable to quickly change the value, it gave me a lot of problems which caused me to restart a couple of times and methodically read the instructions again. OVerall, it wasn't a hard assignment and as long as I checked each dimension and watched out for the parts that were based off of other parts, I can do this without much trouble
+
+## Robot Gripper Design🌾
+### Assignment Description
+
+The assignment is to design a basic gripper for a robot arm. The requirements are:
+The gripper must close using only one actuator (one servo, one solenoid, one motor, etc)
+The jaws of the gripper must be able to fully close.
+All parts of the gripper must be able to be 3D printed, laser cut, or already exist in the engineering lab
+The gripper must be fully assembled in Onshape with all fasteners, and the assembly must be able to be animated
+
+### Evidence
+![Assembly 1 (6)](https://github.com/lwylie10/engr3/assets/143749987/5a61101d-1fa6-49c9-bd45-58e30772d617)
+front
+![Assembly 1 (5)](https://github.com/lwylie10/engr3/assets/143749987/0126094f-ae51-46d2-bf25-00419eb596ca)
+isometric
+
+### Part Link 
+
+https://cvilleschools.onshape.com/documents/d1b222726e077da5b586d846/w/3e2749127f53dd8ce50686ed/e/0005d5029271e50db13bad28?renderMode=0&uiState=66031d3b4be58203d78bc0c1
+
+### Reflection
+
+Ok... This was either a very hard assignment or I'm just a total idiot. It started out super well! The errors I had I kinda ignored and kept going and I had most of the parts built off of each other(mistake). It was all fine until I tried to mirror it over the y axis to make the part 3D. Thats when literally everything broke. I swear one error led to another and I didn't even know where to start to fix it. Luckily Benji came to the rescue and gave me a bunch of tips on how to fix it and also make sure it doesn't happen next time. One thing that I was doing wrong was that I made the parts and built them off of each other so instead I built them individually and mirrored it even more to make sure all of my dimensions were correct on both sides. Overall, once I got some tips from Benji, I was able to fix the project and get it working.
 
 ## Onshape_Assignment_Template🌾
 ### Assignment Description
@@ -427,9 +471,6 @@ Take several cropped screenshots of your Onshape document from different angles.
 ### Reflection
 
 What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience? Your goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person. Think about your audience for this one, which may be "future you" (when you realize you need some of this code in three months), me, or your college admission committee!
-
-
-
 ## NextAssignment
 
 ### Description & Code Snippets
