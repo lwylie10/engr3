@@ -323,7 +323,7 @@ https://github.com/lwylie10/engr3/assets/143749987/072f673a-4be0-477d-8d70-04ea0
 This assignment was pretty difficult. Me and addy began working on it together and realized that we forgot to download all of the libraries which gave us many errors. I also had some trouble with following and tracking the spot of the rotary encoder and I had to code around that a bit. Another thing I struggled with was using the variable "menu_index_lcd" because I had to import it into the assignment so many times. Most of my errors consisted of indentation or parenthesis errors because the context was messed up or I screwed up the braces and brackets.
 
 
-## Code - Stepper Motor + Limit Switch
+## Stepper Motor/Limit Switch
 
 ### Assignment Description
 
