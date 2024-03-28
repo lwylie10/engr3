@@ -398,52 +398,28 @@ This assignment was pretty easy except for that I didn't realize that the assign
 This assignment I had to use an infrared (IR) sensor to change the color of my board’s Neopixel LED. It had to change the color red when there was an object nearby and green when there was nothing in the way
 
 ```python
+# Import libraries
 import board
-import neopixel
 import digitalio
+import neopixel 
 
-# Set up the IR Sensor using digital pin2.
+# Initialize the on-board neopixel and set the brightness.
+led = neopixel.NeoPixel(board.NEOPIXEL, 1)
+led.brightness = 0.3
+
+# Set up the IR Sensor using digital pin 2. 
 ir_sensor = digitalio.DigitalInOut(board.D2)
+ir_sensor.direction = digitalio.Direction.INPUT # Set the IR sensor as an input.
+ir_sensor.pull = digitalio.Pull.UP              # Use the internal pull-up resistor.
 
-# Set the photointerupter as an input.
-ir_sensor.direction = digitalio.Direction.INPUT
 
-# use the internal pull-up resistor.
-ir_sensor.pull = digitalio.Pull.UP
-
-#while loop runs the inside continuously.
-
+# While loop runs the code inside continuously. 
 while True:
-
-   # if an object is near the IR sensor (sensor is LOW):
-       #Print something to ther Serial Monitor.
- 
-
- #if nothing is near the IR sensor (sensor is HIGH):
-   #Print something to the Serial Monitor.
-
-   #Intialize the on-board neopixel and set the brightness.
-led = neopixel.NeoPixel(board.NEOPIXEL, 1 )
-Led.brightness = 0.3
-
-   #While loop runs the code inside continuously.
-   
-while True:
- # if an object is near the IR sensor (sensor is LOW):
- #print something to the Serial Monitor.
-
- #if nothing is near the IR sensor(sensor is HIGH):
- #Print something to the Serial Monitor.
- # Intialize the on-board neopixel and set the brightness.
- led = neopixel.NeoPixel(board.NEOPIXEL, 1)
- led.brightness = 0.3
- #While loop runs the code inside continuously.
- while True:
-   #If an object is near the IR sensor (sensor is LOW):
-       #Set the NeoPixel's color tp RED.
-
-#If nothing is near the IR sensor (sensor is HIGH):
-  #Set the NeoPixel's color to GREEN.
+    print(ir_sensor.value)
+    if ir_sensor.value == False:
+        led[0] = (255, 0, 0)
+    if ir_sensor.value == True:
+        led[0] = (0, 255, 0)
 ```
 
 **Lastly, please end this section with a link to your code or file.**  
