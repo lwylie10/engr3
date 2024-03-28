@@ -425,13 +425,10 @@ while True:
 **Lastly, please end this section with a link to your code or file.**  
 
 ### Evidence
-
-### Wiring
-
-
+![ezgif-4-93d506e7f2](https://github.com/lwylie10/engr3/assets/143749987/521b2676-cebc-4610-b080-be3788dee529)
+credit to Josh for the wiring
 ### Reflection
-Well I don't know if I'll get to editing this later. But I didn't finish this assignment lol. I started with a lot of the sudo code and figuring out the basics with some of my teammates but I didn't get much farther because I got distracted with the robot arm project.
-
+This assignment didn't really take me long at all because it was simple wiring the IR sensor up. I struggled for a bit on getter the ir sensor to read the right distance and send it back to the board on its own but once I figured it out everything worked. It would definielty be fun to make it change even more colors and play around with the settings on the sensor to make it even cooler.
 ## The Hanger🌾
 ### Assignment Description
 
