@@ -244,6 +244,7 @@ while True:
 ![My Project](https://github.com/lwylie10/engr3/assets/143749987/ed235ea1-b424-4ad1-bfe0-54313162783f)
 
 ### Wiring
+![149255410-87310b2a-6b4f-47cb-8991-7d1b8a96b390](https://github.com/lwylie10/engr3/assets/143749987/2fd8f19d-4afe-4170-862d-2a9b18eb6a4a)
 
 ### Reflection
 Doing this code basically took no time at all because when you use the provided time.monotonic() its very easy. One way to make it even better is to instead update the photointerrupter only when it
@@ -424,6 +425,8 @@ while True:
 ```
 
 **Lastly, please end this section with a link to your code or file.**  
+### Wiring
+![IR-Sensor-With-Arduino-Circuit](https://github.com/lwylie10/engr3/assets/143749987/904cdbde-d407-479c-a10a-50f7078fdbfe)
 
 ### Evidence
 ![ezgif-4-93d506e7f2](https://github.com/lwylie10/engr3/assets/143749987/521b2676-cebc-4610-b080-be3788dee529)
