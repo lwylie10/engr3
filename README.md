@@ -247,8 +247,7 @@ while True:
 ![149255410-87310b2a-6b4f-47cb-8991-7d1b8a96b390](https://github.com/lwylie10/engr3/assets/143749987/2fd8f19d-4afe-4170-862d-2a9b18eb6a4a)
 
 ### Reflection
-Doing this code basically took no time at all because when you use the provided time.monotonic() its very easy. One way to make it even better is to instead update the photointerrupter only when it
-s interrupted instead of counting seconds. 
+Doing this code basically took no time at all because when you use the provided time.monotonic() its very easy. One way to make it even better is to instead update the photointerrupter only when its interrupted instead of counting seconds. I thought it's interesting that when something breaks the plane of the interrupter, the code has to ask if it the interrupter value equals one. I guess i don't really understand why something interrupting the interrupter equals one. But it was a quick and easy assignment that could lead to a lot of other projects if you were to build off of it.
 
 
 
